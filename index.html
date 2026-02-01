@@ -54,18 +54,65 @@
 						<article class="post featured">
 							<header class="major">
 								<h2><a href="#">Software Projects</a></h2>
-								<p> Sc.B. in Computer Science from Brown University with a focus on Deep Learning and Robotics </br>
-								Interested in Robot Planning and Control. Specifically interested in the application of Robots used for social good</p>
-								<h4> Machine Learning | Robotics </h4>
+								<p> M.S. in Robotics from Northeastern University </br>
+									Sc.B. in Computer Science from Brown University with a focus on Deep Learning and Robotics </br>
+								Currently focused on control of underactuated and legged systems.</p>
+								<h4> Machine Learning | Reinforcement Learning | Controls Engineering | Perception </h4>
 							</header>
-							<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
-							<!-- <ul class="actions special">
-								<li><a href="#" class="button large">Full Story</a></li>
-							</ul> -->
+						</article>
+
+						<article>
+							<header>
+								<span class="date">September 2025 - Present</span>
+								<h2>
+									<a 
+									href="#">Silicon Synapse Lab
+									</a>
+								</h2>
+							</header>
+
+							<h3>Research Assistant</h3> 
+							<a href="#" class="image fit"><img src="images/MPC_Only.gif" alt="" /></a>
+							<p>
+							Developing a whole-body controller for the Unitree G1 Humanoid Robot using IsaacSim and IsaacLab to achieve dynamic locomotion 
+							and object manipulation based on MPC-guided Reinforcement Learning methods.
+							Implementing Model Predictive Control (MPC) based on Single Rigid Body Dynamics (SRBD) and Linearized Inverted Pendulum Model (LIPM) to derive ideal contact forces and positions for each foot
+							during locomotion tasks. I will use these MPC outputs to guide the training of an RL policy in IsaacLab, which will enable the humanoid robot to walk and manipulate objects in a simulated environment.
+
+							So far, I have designed a standing controller using Quadratic Programming (QP) to solve for optimal contact forces given a desired CoM position and orientation. 
+							These desired contact forces are then converted to commanded joint torques through WBC (Whole Body Control) using the robot's dynamics and kinematics.
+
+							</p>
+							<ul class="actions special">
+								<li><a href="https://siliconsynapse.sites.northeastern.edu/" class="button">Silicon Synapse Lab</a></li>
+							</ul>
 						</article>
 
 					<!-- Posts -->
 							<section class="posts">
+								<article>
+									<header>
+										<span class="date">November 2025</span>
+										<h2><a href="#">Visual SLAM</a></h2>
+									</header>
+
+									<video width="700" controls autoplay>
+										<source src="images/vslam.mp4" type="video/mp4">
+									</video>
+									
+									<h3>EECE 5550: Mobile Robotics</h3>
+									<p> 
+									Implemented an algorithm for Visual-based Simultaneous Localization and Mapping (VSLAM) using April Tag detection to 
+									building a pose graph with the GTSAM library. Intrinsic Camera Calibration was also performed and these parameters were added to the pose graph as well.
+									I then performed Pose Graph Optimization to fit these poses together and determine the world poses of the robot and the April Tags in the environment, all from one monocular camera.
+
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/tmcarn/EECE5550_Mobile_Robotics/tree/main/hw3" class="button">Project Repo</a>
+										</li>
+									</ul>
+									
+								</article>
 								<article>
 									<header>
 										<span class="date">May-September 2025</span>
@@ -211,15 +258,15 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">theo_mcarn@brown.edu</a></p>
+								<p><a href="#">mcarn.t@northeastern.edu</a></p>
 							</section>
 							<section>
-								<h3>Social</h3>
+								<h3>Profiles</h3>
 								<ul class="icons alt">
 									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<!-- <li><a href="https://github.com/tmcarn?tab=overview&from=2024-03-01&to=2024-03-31" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+									<li><a href="https://github.com/tmcarn?tab=overview&from=2024-03-01&to=2024-03-31" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.linkedin.com/in/theo-mcarn" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
