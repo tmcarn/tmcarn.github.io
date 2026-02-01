@@ -30,10 +30,6 @@
 							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
 						</ul>
 						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
 							<li><a href="https://docs.google.com/document/d/1F-C6n-7AAtSWzBAEhrf8ji0KPaqFWEiK/edit?usp=sharing&ouid=105800482798292232642&rtpof=true&sd=true" class="button">Resume</a></li>
 							<li><a href="images/Theo McArn Official Transcript.pdf" class="button">Transcript</a></li>
 							<li><a href="https://github.com/tmcarn" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -44,124 +40,156 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-						<article class="post featured">
-							<header class="major">
-								<h2><a href="#">Software Projects</a></h2>
-								<p> Sc.B. in Computer Science from Brown University with a focus on Deep Learning and Robotics </br>
-								Interested in Robotic Perception and Control. Specifically interested in the application of Robots used for social good</p>
-								<h4> Machine Learning | Robotics </h4>
-							</header>
-							<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
-							<!-- <ul class="actions special">
-								<li><a href="#" class="button large">Full Story</a></li>
-							</ul> -->
-						</article>
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Design Projects</a></h2>
+									<p>I have a passion for design and making ideas come to life. <br /> 
+									These are a few of my proudest projects, both previous and on-going  </p>
+									<h4> 3D printing | PCB Design | Laser Cutting | Woodworking | Milling | Lathe </h4>
+								</header>
+								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
+								<!-- <ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li>
+								</ul> -->
+							</article>
 
-					<!-- Posts -->
+						<!-- Posts -->
+							
+								<article>
+									<header>
+										<span class="date">May 2022 - Present</span>
+										<h2>
+											<a 
+											href="#">BRICS (BRown Interaction Capture Systems)
+											</a>
+										</h2>
+									</header>
+									<center>
+									<video width= 90% controls autoplay muted loop playsinline>
+										<source src="images/BRICS-Evolution.mp4" type="video/mp4" >
+									</video>
+									</center>
+
+									<h3>Lead Design Engineer for the BRICS reseach group</h3> 
+									<p>
+										I have spent the last three years developing multi-camera caputre systems which records video of human interaction from dozens of view point, simutaneously, for syncronous data capture. 
+										This data can then be used to create 3D reconstructions of scenes for spatio-temporal visualization and further analysis. 
+									</br> 	
+										The first version of our capture stage, BRICS Mini, was built around a rigid frame, and was designed to capture small, table top scenes of object-hand interaction.  
+									</br> 
+										Scaling up from this, we wanted to capture scenes at a room scale, rather than a hand scale, so we designed a more modular "bric" that could be mounted to the walls and ceiling of a space. 
+										This new system could now capture human-object interaction rather than hand-object interaction. 
+									</br> 
+										Currently, we want to move away from the confines of a room with 4 walls to make this system more mobile and generalizable. 
+										We are working on a tripod system that is fast to set up and easy to move around in order to increase the variety of captured data.
+									</br>
+										All of these designs were created, assembled, and animated utilizing the CAD software Fusion360.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://brics4d.com/" class="button">BRICS Website</a></li>
+									</ul>
+								</article>
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">Current Work</span>
-										<h2><a href="#">PyClops: A Balancing Robot</a></h2>
+										<span class="date">January 2025 - Preset </span>
+										<h2><a href="#">PyClops PCB Design</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/Balbot 1.0.png" alt="" /></a>
-									<h3>Personal Project</h3>
-									<p> 
-										Designing and programming a balancing robot that maintains an upright position and can drive around a room autonomously using stereo vision.
-										I have implemented an environment in pygame to simulate the behavior of the robot and the effects of gravity on the system.
-										So far I have implemented a PID algorithm to keep the drone stable but I plan to use this same environment to train a reinforcement learning policy.  
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/tmcarn/balbot" class="button">Balbot Codebase</a>
-										</li>
-									</ul>
 
-
+									<a href="#" class="image fit"><img src="images/PCB Full Assembly.png" alt="" /></a>
 									
-								</article>
-								<article>
-									<header>
-										<span class="date">May, 2024</span>
-										<h2><a href="#">Reinforcement Learning for Optimized Drone Flight</a></h2>
-									</header>
-									<video width="400" controls autoplay>
-										<source src="images/Final Capstone Demo Portfolio.mp4" type="video/mp4">
-									</video>
-									<h3>Machine Learning Capstone Project</h3>
-									<p> 
-										I modeled and rendered a 2D drone using rigid body physics 
-										and optimized its flight using Reinforcement Learning techniques.
-										I experimented with multiple models, control systems, and custom environments to maximize performance and flight control.
-										In all, I observed improved performance with a model trained to dynamically fine tune PID parameters, as compared to a static PID controller
+									<h3> Personal Project </h3>
+									
+									<p>
+										A custom PCB designed to interface with a RaspberryPi to be used as a robotics platform for my ballancing robot: PyClops. 
+										This PCB features:
+										
+										<ul style="text-align: left;">
+											<li>Power distribution system</li>
+											<li>Battery voltage monitoring system</li>
+											<li>Dual motor driver</li>
+											<li>Integrated Inertial Mesurement Unit</li>
+											<li>Connection for two brushed DC Motors, with encoders</li>
+											<li>Conenction for up to three servos</li>
+											<li>Connection for a radio reciever module</li>
+										</ul> 
+
+										This PCB was designed using KiCad and will be used in my PyClops project to develop a more robust, reliable and streamlined ballancing robot.  
 									</p>
-									<ul class="actions special">
-										<li><a href="images/Theo_McArn_Capstone (1).pdf" class="button">Capstone Project Report</a>
-										</li>
-									</ul>
-
-
 									
 								</article>
 								<article>
 									<header>
 										<span class="date">September-December, 2023</span>
-										<h2><a href="#">Building and Programming an Autonomous Drone</a></h2>
+										<h2><a href="#">HoloWorld</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/drone.jpg" alt="" /></a>
-									<h3> Introduction to Robotics Project </h3>
-									<p>
-										I assembled and programmed a quadcopter, utilizing a Raspberry Pi as the flight computer. 
-										The drone was programmed using ROS within a Linux environment.
-										I used Optical Flow data from the onboard camera to estimate velocity, and combined this information with acceleration data to estimate global position.
-										I implemented an Unscented Kalman Filter to reduce noise from sensor readings and produce accurate state estimates.
-										I also created and tuned a PID controller to maintain a stable position, and velocity during flight. 
-										Lastly, I enabled simultaneous localization and mapping (SLAM) by implementing the FAST-SLAM algorithm using particle filters which can be seen below.
-
-									</p>
-
-									<video width="400" controls autoplay>
-										<source src="images/SLAM (Compressed).mp4" type="video/mp4">
-									</video>
+									<a href="#" class="image fit"><img src="images/HoloWorld-74.jpg" alt="" /></a>
+									<h3> Designing Humanity Centered Technology, Final Project: </h3>
+									<h4>An affordable 2.5 Dimensional viewing experience </h4>
 									
-								</article>
-								<article>
-									<header>
-										<span class="date">April, 2022</span>
-										<h2><a href="#">Stable Diffusion Image Generator</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/gen.png" alt="" /></a>
-									<p>A deep learning model, inspired by Stable Diffusion, which generates novel images based on an image dataset.</p>
+									<p>
+										A simple device designed to enhance the viewing experience of portable devices. Based off of the idea of Pepper's Ghost
+										Hologram, Holoworld is meant to bring more dimension to our 2 dimensional screens through the use of optical illusions. 
+										This project was designed to be laser cut out of cardboard and plastic with the intetion that this could be an easily accessible and widespread technology. 
+										We have published a paper explaining our product and we are currently in the process of filing a patent for our designs.
+									</p>
+									<video width="400" controls autoplay muted loop playsinline>
+										<source src="images/HOLO-WORLD-VIDEO-compressed.mp4" type="video/mp4" >
+									</video>
+										<!-- <iframe src="https://drive.google.com/file/d/15v1fDWMCDtsOGpHUXbcmrWjyTSRtKpyx/preview" width="400" height="224" frameborder="0" allowfullscreen></iframe> -->
+									<figure>
+										<a href="#" class="image fit"><img src="images/CardBoardCuts.png" alt="" /></a>
+										<figcaption>Final Designs for Cardboard Component</figcaption>
+									</figure>
+
+									<figure>
+										<a href="#" class="image fit"><img src="images/PlasticCuts.png" alt="" /></a>
+										<figcaption>Final Designs for Plastic Component</figcaption>
+									</figure>
+									
 									<ul class="actions special">
-										<li><a href="https://docs.google.com/document/d/1XoTyuq8kJ-aRkT4Z2QuzMDGxFrVqTXFIYGMowqCz_g0/edit?usp=sharing" class="button">Project Report</a></li>
+									<li><a href="images/vr23b-sub1044-i7.pdf" class="button">Project Report</a></li>
 									</ul>
 								</article>
+								<!-- <article>
+									<header>
+										<span class="date">March 2023</span>
+										<h2><a href="#">Machined Screw Plate and Screw Driver</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/plate and driver.jpg" alt="" /></a>
+									<h3>Course in Mechanical Technology</h3>
+									<p>
+										<strong>Screw Plate</strong> : Followed detailed design schematic to fabricate a screw plate used to visualize and classify screws and screw holes. 
+										Using a CNC Milling Machine and Drill Press to measure, engrave, drill, and chamfer holes. Hand tapped the holes to make threads.
+										 And Hand polished. 
+									</p>
+									<p>
+										<strong>Screw Driver</strong>: Forged the head of the screw driver out of a steel rod and filed it down to shape. Head treated and annealed the tip for desired strenght.
+										 For the handle, I milled flutes into a stock piece of delrin and turned it on the lathe for an ergonomic shape. Lastly, I knurled the end of the rod and press fit
+										 it into the handle for the final product. 
+									 </p>
+										<!-- <iframe src="https://drive.google.com/file/d/15v1fDWMCDtsOGpHUXbcmrWjyTSRtKpyx/preview" width="400" height="224" frameborder="0" allowfullscreen></iframe> -->
+										<!-- <ul class="actions special">
+										<li><a href="images/vr23b-sub1044-i7.pdf" class="button">Project Report</a></li>
+									</ul> 
+								</article>
 								<article>
 									<header>
-										<span class="date">December, 2021</span>
-										<h2><a href="#">American Sign Language Translator</a></h2>
+										<span class="date">April-June, 2019</span>
+										<h2><a href="#">Eagle Scout Project</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/ASL Poster.pptx.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="images/bench.JPG" alt="" /></a>
 									<p>
-										A Convolutional Neural Network to classify letters of the American Sign Language alphabet based on images. 
+										<h3>Swinging Meditation Bench</h3>
+										For my Eagle Scout Project, I designed a swinging bench to donate to my local church's Meditation Garden. For this project I designed, the bench, created a bill of materials, gathered donors, and lead a team to build and install the bench.
 									</p>
 									<ul class="actions special">
-										<li><a href="images/Final_Project_Report.pdf" class="button">Project Report</a>
-										</li>
+										<li><a href="https://docs.google.com/document/d/1IH6lryxdqiRaRtaT6yinm1A76RZjmrjfSxvanJAkosc/edit?usp=sharing" class="button">Project Sketches and Steps</a></li>
 									</ul>
-								</article>
+								</article> -->
+							</section>
 
-								<!-- things to add:
-								- decision trees
-								- computer vision 
-								- flappy bird?
-								- 
-									-->
-							
-							
-								
-						</section>
-
-				</div>
+					</div>
 
 				<!-- Footer -->
 				<footer id="footer">
