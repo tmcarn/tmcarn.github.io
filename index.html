@@ -150,12 +150,13 @@
 									<p> 
 										Designing and programming a balancing robot that maintains an upright position and can drive around a room autonomously.
 										As an initial step, I implemented an simplified environment in Pygame to simulate the behavior of the robot and the effects of gravity on the system.
-										I used a cascading PID controller to keep the drone stable and maintain a desired x-location. 
-										
+										I used a cascading PID controller to keep the drone stable and maintain a desired x-location.
 										I then implemented this controller on hardware I designed and assembled from scratch.
-
 										I plan to expand the environment to 3D and implement a more advanced controller to include drivability and steering along with ballance. 
-										</p>
+										<br></br>
+										(I added background and robot images to the environment to make it more visually appealing in order to convert this simulation into a learning tool used to teach PID controllers to a younger audience)
+										
+									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/tmcarn/balbot" class="button">Balbot Codebase</a>
 										</li>
@@ -209,13 +210,50 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">April, 2022</span>
+										<span class="date">December, 2023</span>
+										<h2><a href="#">Brain2Music: Reconstructing Music from fMRI Data</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Brain2Music.png" alt="" /></a>
+									<h3> Computational Cognitive Science Project </h3>
+									<p> 
+										For this group project we reimplemented the Brain2Music pipeline, training MusicLM (MuLan + AudioLM) on the GTZAN dataset, learning a mapping from fMRI neural recordings to the MuLan music embedding space.
+										We preprocessed 4D fMRI data using SPM12 (motion correction, normalization, smoothing) and generated song reconstructions across 10 genres conditioned on subject-specific brain activity.
+										We trained MuLan's contrastive audio-text encoder alongside AudioLM's semantic, coarse, and fine transformers, adapting an open-source MusicLM implementation to support embedding-conditioned generation.
+									</p>
+									<ul class="actions special">
+										<li><a href="images/CLPS Final Project.pdf" class="button">Project Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">May, 2023</span>
+										<h2><a href="#">Text Summarization via Transfer Learning</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/attention.png" alt="" /></a>
+									<h3> Deep Learning Project </h3>
+									<p> 
+										For this project, I fine-tuned T5 and BERT transformer models on the WikiLingua dataset using PyTorch and Hugging Face for improved text summarization. 
+										I then evaluated models using ROUGE-L metrics to comparing learning performance across architectures and determine the best methods for the particular dataset
+										As a part of this project I also explored cross-lingual summarization by fine-tuning mT5 for English-to-German summary generation.
+									</p>
+									<ul class="actions special">
+										<li><a href="images/Text Summarization.pdf" class="button">Project Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April, 2023</span>
 										<h2><a href="#">Stable Diffusion Image Generator</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/gen.png" alt="" /></a>
-									<p>A deep learning model, inspired by Stable Diffusion, which generates novel images based on an image dataset.</p>
+									<h3> Deep Learning Project </h3>
+									<p>
+										For this project, I implemented a version of the Stable Diffusion model architecture with a U-Net using PyTorch to generate novel 32x32 grayscale images.
+										I trained the network over 30 epochs to optimize the model and produce images similar to that in the dataset. 
+										I was limited by compute so the results are not as high quality as the original Stable Diffusion model, but the architecture and training process are similar.
+									</p>
 									<ul class="actions special">
-										<li><a href="https://docs.google.com/document/d/1XoTyuq8kJ-aRkT4Z2QuzMDGxFrVqTXFIYGMowqCz_g0/edit?usp=sharing" class="button">Project Report</a></li>
+										<li><a href="images/Theo McArn COSC420 Stable Diffusion Report.pdf" class="button">Project Report</a></li>
 									</ul>
 								</article>
 								<article>
@@ -232,16 +270,6 @@
 										</li>
 									</ul>
 								</article>
-
-								<!-- things to add:
-								- decision trees
-								- computer vision 
-								- flappy bird?
-								- 
-									-->
-							
-							
-								
 						</section>
 
 				</div>
