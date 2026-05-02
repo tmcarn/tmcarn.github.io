@@ -89,6 +89,37 @@
 							<section class="posts">
 								<article>
 									<header>
+										<span class="date">April 2025</span>
+										<h2><a href="#">3-Link Bipedal Walker</a></h2>
+									</header>
+
+									<video autoplay loop muted playsinline style="width: 100%; object-fit: cover;"
+										id="biped-vid"
+										onloadeddata="this.playbackRate = 2.0;">
+										<source src="images/biped_animation_cropped.mp4" type="video/mp4">
+									</video>
+									
+									<h3>EECE 7398: Legged Robotics</h3>
+									<p> 
+									For this project, we designed a model-based controller for a 3-link bipedal walker using
+									Hybrid Zero Dynamics (HZD) to achieve stable, and mechanically efficient walking gaits. 
+									We derived the equations of motion for the system using Euler-Lagrange mechanics and 
+									we reduced the system from a 6-dimentional state space to a 2-dimensional embedded submanifold using zero dynamics 
+									and virtual contraints. These virtual contraints were then chosen by performing optimization to ensure a stable, 
+									periodic gait with the lowest possible power consumption. 
+									We then implemented a nonlinear feedback controller to regulate the robot's joint angles in order to enforces these constraints we defined.
+									
+									
+									All of the design and simulation work for this project was done in MATLAB. More details about the control methodologies can be found in out Project Report.
+								</p>
+									<ul class="actions special">
+										<li><a href="./images/EECE_7398_Final_Project.pdf" class="button">Project Report</a></li>
+										<li><a href="https://github.com/arjun-2612/LeggedRobotics_BipedalWalker" class="button">Project Repository</a></li>
+									</ul>
+									
+								</article>
+								<article>
+									<header>
 										<span class="date">November 2025</span>
 										<h2><a href="#">Visual SLAM</a></h2>
 									</header>
